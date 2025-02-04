@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 const NavBar = () => {
 	return (
 		<div className="navbar bg-inherit">
@@ -10,7 +11,7 @@ const NavBar = () => {
 							<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
 						</svg>
 					</summary>
-					<ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+					<ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow text-xl">
 						<li>
 							<Link href="/about-me">About Me</Link>
 						</li>
@@ -29,7 +30,7 @@ const NavBar = () => {
 				</details>
 			</div>
 			<div className="flex-1">
-				<Link className="btn btn-ghost text-xl" href="/">
+				<Link className="btn btn-ghost text-2xl" href="/">
 					Home
 				</Link>
 			</div>
