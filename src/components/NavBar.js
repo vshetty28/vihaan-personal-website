@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 const NavBar = () => {
 	return (
-		<div className="navbar bg-inherit min-w-screen border-base-100 border-b-2 pt-2 justify-items-center">
+		<div className="navbar bg-inherit min-w-screen border-black dark:border-base-100 border-b-2 pt-2 justify-items-center">
 			<div className="flex flex-row w-screen justify-between lg:px-5">
 				<Link className="btn btn-link text-lg lg:text-2xl text-primary no-underline hover:no-underline" href="/">
 					Home
