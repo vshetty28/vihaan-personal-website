@@ -29,11 +29,11 @@ const WorkExperience = ({ experience }) => {
 			</button>
 			<dialog id={`my_modal_${experience.id}`} className="modal">
 				<div className="modal-box">
-					<h3 className="font-bold text-md lg:text-2xl text-primary mt-2">{experience.title}</h3>
-					<p className="py-4 whitespace-pre-line">{experience.description}</p>
+					<h1 className="font-bold text-md lg:text-2xl text-primary my-2">{experience.title}</h1>
+					<p className="lg:py-4 whitespace-pre-line">{experience.description}</p>
 					<div className="modal-action">
 						<form method="dialog">
-							<button className="btn btn-sm lg:btn-md">Close</button>
+							<button className="btn btn-xs lg:btn-md">Close</button>
 						</form>
 					</div>
 				</div>
