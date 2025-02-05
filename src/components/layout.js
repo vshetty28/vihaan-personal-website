@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export default function Layout({ children }) {
 	return (
-		<div className={`${geistSans.variable} ${geistMono.variable} flex flex-col min-h-screen min-w-screen font-[family-name:var(--font-geist-sans)] antialiased text-sm lg:text-xl justify-between bg-black text-white`}>
+		<div className={`${geistSans.variable} ${geistMono.variable} flex flex-col min-h-screen min-w-screen font-[family-name:var(--font-geist-sans)] antialiased text-sm lg:text-xl justify-between`}>
 			<div className="flex-none w-screen">
 				<NavBar />
 			</div>
