@@ -10,7 +10,7 @@ const Skills = () => {
 			<title>Skills</title>
 
 			<Title text="Technical Skills" />
-			<div className="justify-items-center">
+			<div className="justify-items-center mt-36">
 				<SkillList name="Programming Languages" skills={programmingLanguages} />
 				<SkillList name="Frameworks/Technologies" skills={frameworks} />
 			</div>

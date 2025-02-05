@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export default function Layout({ children }) {
 	return (
-		<div className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_5px] items-center justify-items-center min-h-screen min-w-screen py-8 pb-10 font-[family-name:var(--font-geist-sans)] antialiased text-xl`}>
+		<div className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_5px] items-center justify-items-center min-h-screen min-w-screen py-8 pb-10 font-[family-name:var(--font-geist-sans)] antialiased text-xl relative`}>
 			<NavBar />
 			<main>{children}</main>
 			<Footer />

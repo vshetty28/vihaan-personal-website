@@ -9,7 +9,7 @@ const AboutMe = () => {
 				<div className="hero-content flex-col lg:flex-row-reverse">
 					<Image src="/assets/headshot.png" alt="" class="size-1/4 rounded-full shadow-2xl max-h-full m-4" width={4000} height={4000} />
 					<div className="px-20 mx-10">
-						<h1 className="p-4 text-6xl font-sans mb-10 text-center font-bold text-primary tracking-wide"> About Me </h1>
+						<h1 className="p-4 text-6xl mb-4 text-center font-bold text-primary tracking-wide"> About Me </h1>
 						<p className="text-pretty">Hi! My name is Vihaan Shetty. Welcome to my personal website! I am originally from the SF Bay Area, California, but am currently studying Computer Science and Data Science at Purdue. I expect to graduate in Spring 2026. I am a huge sports fan, with some of my favorite teams being the 49ers, Warriors, FC Barcelona and Liverpool FC. In my free time, I love working out and playing videogames. Feel free to contact me at the links provided below, or explore the rest of the site.</p>
 					</div>
 				</div>

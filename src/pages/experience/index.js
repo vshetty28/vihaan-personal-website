@@ -9,7 +9,7 @@ const checkmarkIcon = (
 );
 const Experience = () => {
 	return (
-		<div>
+		<div className="px-4">
 			<title>Experience</title>
 
 			<Title text="Work Experience" />
