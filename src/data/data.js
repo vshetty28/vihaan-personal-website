@@ -24,7 +24,7 @@ export const frameworks = [
 ];
 
 export const experiences = [
-	{ date: "Aug 2023 - May 2024", title: "Undergraduate Researcher - Pro Football Focus", company: "The Data Mine - Purdue University" },
-	{ date: "Jan 2024 - Present", title: "Corporate Partners TA", company: "The Data Mine - Purdue University" },
-	{ date: "Summer 2025", title: "Data Science Engineer Intern", company: "BNY Mellon" },
+	{ date: "Aug 2023 - May 2024", title: "Undergraduate Researcher - Pro Football Focus", company: "The Data Mine - Purdue University", start: true, end: false, completed: true },
+	{ date: "Jan 2024 - Present", title: "Corporate Partners TA", company: "The Data Mine - Purdue University", start: false, end: false, completed: true },
+	{ date: "Summer 2025", title: "Data Science Engineer Intern", company: "BNY Mellon", start: false, end: true, completed: false },
 ];
