@@ -24,7 +24,7 @@ export const frameworks = [
 ];
 
 export const experiences = [
-	{ date: "Aug 2023 - May 2024", title: "Undergraduate Researcher - Pro Football Focus", company: "The Data Mine - Purdue University", start: true, end: false, completed: true },
-	{ date: "Jan 2024 - Present", title: "Corporate Partners TA", company: "The Data Mine - Purdue University", start: false, end: false, completed: true },
-	{ date: "Summer 2025", title: "Data Science Engineer Intern", company: "BNY Mellon", start: false, end: true, completed: false },
+	{ id: 1, date: "Aug 2023 - May 2024", title: "Undergraduate Researcher - PFF", company: "The Data Mine", location: 'Purdue University', description: "- Developed ML algorithms using XGBoost on advanced NFL charting data to analyze value, difficulty, and frequency of NFL quarterback throws\n\n- Trained models on Pro Football Focus's NFL data and applied to NCAAF data for applications in pre-draft analysis\n\n- Created interactive Tableau visualizations of algorithm results and other patterns found in data", start: true, end: false, completed: true },
+	{ id: 2, date: "Jan 2024 - Present", title: "Corporate Partners TA", company: "The Data Mine", location: 'Purdue University', description: "- Project Manager overseeing Data Mine students working alongside the Management Performance Hub on ICJI data\n\n- Responsible for enforcing Agile methodology as Scrum Master\n\n- Helped students with technical issues and assisted in their development of technical skills required for the project", start: false, end: false, completed: true },
+	{ id: 3, date: "Summer 2025", title: "Data Science Engineer Intern", company: "BNY Mellon", location:'New York City, NY', description: "Starts in Summer 2025", start: false, end: true, completed: false },
 ];

@@ -15,14 +15,29 @@ const checkmarkOpen = (
 );
 const WorkExperience = ({ experience }) => {
 	return (
-		<li>
+		<li className="text-xs lg:text-sm">
 			{experience.start ? <></> : <hr />}
-			<div className="timeline-start">{experience.date}</div>
+			<div className="timeline-start lg:mx-3 text-xs lg:text-2xl lg:tracking-wider">{experience.date}</div>
 			{experience.completed ? checkmarkIcon : checkmarkOpen}
-			<div className="timeline-end timeline-box">
-				<p className="font-bold text-primary">{experience.title}</p>
-				<p className="text-xs lg:text-sm italic">{experience.company}</p>
-			</div>
+			<button className="timeline-end timeline-box text-left hover:border-primary border-2 hover:scale-105 transition duration-200 ease-in-out lg:mx-3" onClick={() => document.getElementById(`my_modal_${experience.id}`).showModal()}>
+				<p className="font-bold text-primary text-xs lg:text-lg">{experience.title}</p>
+				<div className="flex flex-row gap-1">
+					<p className="italic">{experience.company}</p>
+					<p>&ndash;</p>
+					<p>{experience.location}</p>
+				</div>
+			</button>
+			<dialog id={`my_modal_${experience.id}`} className="modal">
+				<div className="modal-box">
+					<h3 className="font-bold text-md lg:text-2xl text-primary mt-2">{experience.title}</h3>
+					<p className="py-4 whitespace-pre-line">{experience.description}</p>
+					<div className="modal-action">
+						<form method="dialog">
+							<button className="btn btn-sm lg:btn-md">Close</button>
+						</form>
+					</div>
+				</div>
+			</dialog>
 			{experience.end ? <></> : <hr />}
 		</li>
 	);
