@@ -2,13 +2,14 @@ import React from "react";
 import SkillList from "@/components/SkillList";
 import {programmingLanguages, frameworks} from "@/data/data";
 import Title from "@/components/Title";
-
+import Head from "next/head";
 
 const Skills = () => {
 	return (
 		<div>
-			<title>Skills</title>
-
+			<Head>
+				<title>Skills</title>
+			</Head>
 			<Title text="Technical Skills" />
 			<div className="justify-items-center">
 				<SkillList name="Programming Languages" skills={programmingLanguages} />
