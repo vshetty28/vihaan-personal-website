@@ -10,17 +10,17 @@ const github_button = (
 
 const Footer = () => {
   return (
-		<div>
-			<footer className="footer w-screen text-neutral-content items-center p-4">
-				<nav className="grid-flow-col gap-16 md:place-self-center ">
-					<h1 className="footer-title text-2xl mt-1">Contact me:</h1>
+		<div className="place-items-center">
+			<footer className="footer w-screen items-center justify-between px-4">
+				<h1 className="text-2xl mt-4 me-10 text-gray-300 font-bold ">Contact Me</h1>
+				<div className='flex flex-row'>
 					<a href="mailto:vihaandhshetty@gmail.com">
-						<Image src='/assets/email.svg' alt="" className="size-10" width={50} height={50} />
+						<Image src="/assets/email.svg" alt="" className="size-14 hover:scale-110 mt-2" width={50} height={80} />
 					</a>
 					<a href="https://linkedin.com/in/vihaanshetty" target="_blank">
-						<Image src='/assets/linkedin.svg' alt="" className="size-10" width={50} height={50}/>
+						<Image src="/assets/linkedin.svg" alt="" className="size-10 mt-4 hover:scale-110 " width={50} height={50} />
 					</a>
-				</nav>
+				</div>
 			</footer>
 		</div>
 	);

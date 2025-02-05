@@ -1,10 +1,13 @@
 import Image from "next/image";
 
-
 export default function Home() {
-  return (
-			<main className="bg-base-200 flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <h1>Hello</h1>
-      </main>
+	return (
+		<div className="text-center">
+			<title>Vihaan Shetty</title>
+			<div className="">
+				<h1 className="text-4xl m-4">Welcome to my personal website! </h1>
+        <p>Use the tabs above to navigate, or use the links below to contact me.</p>
+			</div>
+		</div>
 	);
 }
