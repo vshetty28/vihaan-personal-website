@@ -1,7 +1,7 @@
 import React from "react";
 
 const Title = ({text}) => {
-	return <h1 className="min-w-screen bg-inherit p-4 py-6 text-3xl lg:text-6xl mb-16 text-center font-extrabold text-primary tracking-wide border-primary rounded-md">{text}</h1>;
+	return <h1 className="min-w-screen bg-inherit p-4 py-6 text-3xl lg:text-6xl lg:mb-16 text-center font-extrabold text-primary tracking-wide border-primary rounded-md">{text}</h1>;
 };
 
 export default Title;
