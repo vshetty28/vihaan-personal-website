@@ -11,8 +11,8 @@ const github_button = (
 const Footer = () => {
   return (
 		<div className="">
-			<footer className="footer min-w-screen items-center justify-between px-4">
-				<h1 className="invisible lg:visible lg:text-2xl lg:mt-4 lg:me-10 font-bold text-primary">Contact Me</h1>
+			<footer className="footer min-w-screen items-center justify-between px-6">
+				<h1 className="invisible lg:visible lg:text-2xl lg:mt-4 font-bold text-primary">Contact Me</h1>
 				<div className="flex flex-row">
 					<a href="mailto:vihaandhshetty@gmail.com">
 						<Image src="/assets/email.svg" alt="" className="size-12 lg:size-14 hover:scale-110 lg:mt-2 transition delay-0 duration-200 ease-in-out" width={50} height={80} />

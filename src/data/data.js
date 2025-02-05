@@ -22,3 +22,9 @@ export const frameworks = [
 	{ icon: "/assets/tailwind.svg", text: "Tailwind" },
 	{ icon: "/assets/docker.svg", text: "Docker" },
 ];
+
+export const experiences = [
+	{ date: "Aug 2023 - May 2024", title: "Undergraduate Researcher - Pro Football Focus", company: "The Data Mine - Purdue University" },
+	{ date: "Jan 2024 - Present", title: "Corporate Partners TA", company: "The Data Mine - Purdue University" },
+	{ date: "Summer 2025", title: "Data Science Engineer Intern", company: "BNY Mellon" },
+];
