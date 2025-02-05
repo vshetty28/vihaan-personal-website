@@ -12,13 +12,13 @@ export const programmingLanguages = [
 export const frameworks = [
 	{ icon: "/assets/react.svg", text: "React.js" },
 	{ icon: "/assets/nextjs.svg", text: "Next.js" },
-	{ icon: "/assets/tableau.svg", text: "Tableau" },
-	{ icon: "/assets/pandas.svg", text: "Pandas" },
 	{ icon: "/assets/node.svg", text: "Node.js" },
+	{ icon: "/assets/pandas.svg", text: "Pandas" },
 	{ icon: "/assets/flask.svg", text: "Flask" },
 	{ icon: "/assets/sklearn.svg", text: "sk-learn" },
-	{ icon: "/assets/github.svg", text: "Github" },
 	{ icon: "/assets/numpy.svg", text: "NumPy" },
+	{ icon: "/assets/tableau.svg", text: "Tableau" },
+	{ icon: "/assets/github.svg", text: "Github" },
 	{ icon: "/assets/tailwind.svg", text: "Tailwind" },
 	{ icon: "/assets/docker.svg", text: "Docker" },
 ];
