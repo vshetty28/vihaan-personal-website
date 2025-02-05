@@ -3,28 +3,30 @@ import Link from "next/link";
 import Image from "next/image";
 const NavBar = () => {
 	return (
-		<div className="navbar bg-inherit w-screen border-base-100 border-b-2 pt-0">
-			<div className="flex flex-row w-screen justify-between px-5">
-				<Link className="btn btn-link text-2xl text-primary no-underline hover:no-underline" href="/">
+		<div className="navbar bg-inherit min-w-screen border-base-100 border-b-2 pt-2 justify-items-center">
+			<div className="flex flex-row w-screen justify-between lg:px-5">
+				<Link className="btn btn-link text-lg lg:text-2xl text-primary no-underline hover:no-underline" href="/">
 					Home
 				</Link>
 				<div className="">
-					<Link className="btn btn-link no-underline hover:no-underline text-white text-xl transition duration-200 ease-in-out hover:text-primary" href="/about-me">
+					<Link className="btn btn-link no-underline hover:no-underline text-white transition duration-200 ease-in-out hover:text-primary lg:text-xl" href="/about-me">
 						About Me
 					</Link>
-					<Link className="btn btn-link no-underline hover:no-underline text-white text-xl transition duration-200 ease-in-out hover:text-primary" href="/experience">
+					<Link className="btn btn-link no-underline hover:no-underline text-white transition duration-200 ease-in-out hover:text-primary lg:text-xl" href="/experience">
 						Experience
 					</Link>
-					<Link className="btn btn-link no-underline hover:no-underline text-white text-xl transition duration-200 ease-in-out hover:text-primary" href="/skills">
+					<Link className="btn btn-link no-underline hover:no-underline text-white transition duration-200 ease-in-out hover:text-primary lg:text-xl" href="/skills">
 						Skills
 					</Link>
 					<div className="dropdown dropdown-end">
-						<div tabIndex={0} role="button" className="btn btn-link no-underline hover:no-underline text-white text-xl transition duration-200 ease-in-out hover:text-primary">
+						<div tabIndex={0} role="button" className="btn btn-link no-underline hover:no-underline text-white transition duration-200 ease-in-out hover:text-primary lg:text-xl">
 							More
 						</div>
-						<ul tabIndex={0} className="menu dropdown-content bg-base-100 rounded-box z-[1] mt-4 w-52 p-2 shadow">
+						<ul tabIndex={0} className="menu dropdown-content bg-base-100 rounded-box z-[1] mt-4 lg:w-52 lg:p-2 shadow">
 							<li>
-								<Link href="/projects" className="hover:text-primary">Projects</Link>
+								<Link href="/projects" className="hover:text-primary">
+									Projects
+								</Link>
 							</li>
 							<li>
 								<a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-primary">

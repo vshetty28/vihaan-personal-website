@@ -1,11 +1,17 @@
 import "@/styles/globals.css";
 import Layout from "@/components/layout";
+import Head from "next/head";
 
 export default function App({ Component, pageProps }) {
   return (
-		<Layout>
-			<link rel="icon" href="/icon?<generated>" type="image/<generated>" sizes="<generated>" />
-			<Component {...pageProps} />
-		</Layout>
+		<>
+			<Head>
+				<link rel="icon" href="/icon?<generated>" type="image/<generated>" sizes="<generated>" />
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			</Head>
+			<Layout>
+				<Component {...pageProps} />
+			</Layout>
+		</>
 	);
 }

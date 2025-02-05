@@ -9,17 +9,17 @@ const checkmarkIcon = (
 );
 const Experience = () => {
 	return (
-		<div className="px-4">
+		<div className="w-screen">
 			<title>Experience</title>
 
 			<Title text="Work Experience" />
-			<ul className="timeline timeline-vertical">
+			<ul className="timeline timeline-vertical px-4">
 				<li>
 					<div className="timeline-start">Aug 2023 - May 2024</div>
 					{checkmarkIcon}
 					<div className="timeline-end timeline-box">
 						<p className="font-bold">Undergraduate Researcher - Pro Football Focus</p>
-						<p className="text-sm">The Data Mine - Purdue University</p>
+						<p className="text-xs lg:text-sm">The Data Mine - Purdue University</p>
 					</div>
 					<hr />
 				</li>
@@ -29,7 +29,7 @@ const Experience = () => {
 					{checkmarkIcon}
 					<div className="timeline-end timeline-box">
 						<p className="font-bold">Corporate Partners TA</p>
-						<p className="text-sm">The Data Mine - Purdue University</p>
+						<p className="text-xs lg:text-sm">The Data Mine - Purdue University</p>
 					</div>
 					<hr />
 				</li>
@@ -39,7 +39,7 @@ const Experience = () => {
 					{checkmarkIcon}
 					<div className="timeline-end timeline-box">
 						<p className="font-bold">Data Science Engineer Intern</p>
-						<p className="text-sm">BNY Mellon</p>
+						<p className="text-xs lg:text-sm">BNY Mellon</p>
 					</div>
 					<hr />
 				</li>
