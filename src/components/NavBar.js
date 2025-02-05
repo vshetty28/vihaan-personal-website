@@ -5,29 +5,29 @@ const NavBar = () => {
 	return (
 		<div className="navbar bg-inherit w-screen border-base-100 border-b-2 pt-0">
 			<div className="flex flex-row w-screen justify-between px-5">
-				<Link className="btn btn-ghost text-2xl text-primary" href="/">
+				<Link className="btn btn-link text-2xl text-primary no-underline hover:no-underline" href="/">
 					Home
 				</Link>
 				<div className="">
-					<Link className="btn btn-ghost text-xl" href="/about-me">
+					<Link className="btn btn-link no-underline hover:no-underline text-white text-xl transition duration-200 ease-in-out hover:text-primary" href="/about-me">
 						About Me
 					</Link>
-					<Link className="btn btn-ghost text-xl" href="/experience">
+					<Link className="btn btn-link no-underline hover:no-underline text-white text-xl transition duration-200 ease-in-out hover:text-primary" href="/experience">
 						Experience
 					</Link>
-					<Link className="btn btn-ghost text-xl" href="/skills">
+					<Link className="btn btn-link no-underline hover:no-underline text-white text-xl transition duration-200 ease-in-out hover:text-primary" href="/skills">
 						Skills
 					</Link>
 					<div className="dropdown dropdown-end">
-						<div tabIndex={0} role="button" className="btn btn-ghost rounded-btn text-xl">
+						<div tabIndex={0} role="button" className="btn btn-link no-underline hover:no-underline text-white text-xl transition duration-200 ease-in-out hover:text-primary">
 							More
 						</div>
 						<ul tabIndex={0} className="menu dropdown-content bg-base-100 rounded-box z-[1] mt-4 w-52 p-2 shadow">
 							<li>
-								<Link href="/projects">Projects</Link>
+								<Link href="/projects" className="hover:text-primary">Projects</Link>
 							</li>
 							<li>
-								<a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+								<a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-primary">
 									Resume
 								</a>
 							</li>
