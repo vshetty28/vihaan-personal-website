@@ -9,17 +9,17 @@ const NavBar = () => {
 					Home
 				</Link>
 				<div className="">
-					<Link className="btn btn-link no-underline hover:no-underline transition duration-200 ease-in-out hover:text-primary lg:text-xl" href="/about-me">
+					<Link className="btn btn-link no-underline hover:no-underline transition duration-200 ease-in-out hover:text-primary lg:text-xl dark:text-white text-black" href="/about-me">
 						About Me
 					</Link>
-					<Link className="btn btn-link no-underline hover:no-underline transition duration-200 ease-in-out hover:text-primary lg:text-xl" href="/experience">
+					<Link className="btn btn-link no-underline hover:no-underline transition duration-200 ease-in-out hover:text-primary lg:text-xl dark:text-white text-black" href="/experience">
 						Experience
 					</Link>
-					<Link className="btn btn-link no-underline hover:no-underline transition duration-200 ease-in-out hover:text-primary lg:text-xl" href="/skills">
+					<Link className="btn btn-link no-underline hover:no-underline transition duration-200 ease-in-out hover:text-primary lg:text-xl dark:text-white text-black" href="/skills">
 						Skills
 					</Link>
 					<div className="dropdown dropdown-end">
-						<div tabIndex={0} role="button" className="btn btn-link no-underline hover:no-underline transition duration-200 ease-in-out hover:text-primary lg:text-xl">
+						<div tabIndex={0} role="button" className="btn btn-link no-underline hover:no-underline transition duration-200 ease-in-out hover:text-primary lg:text-xl dark:text-white text-black">
 							More
 						</div>
 						<ul tabIndex={0} className="menu dropdown-content bg-base-100 rounded-box z-[1] mt-4 lg:w-52 lg:p-2 shadow">
