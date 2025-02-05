@@ -10,7 +10,7 @@ const github_button = (
 
 const Footer = () => {
   return (
-		<div className="bg-black">
+		<div className="">
 			<footer className="footer min-w-screen items-center justify-between px-4">
 				<h1 className="invisible lg:visible lg:text-2xl lg:mt-4 lg:me-10 font-bold text-primary">Contact Me</h1>
 				<div className="flex flex-row">
