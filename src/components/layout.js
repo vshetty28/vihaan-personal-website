@@ -1,6 +1,6 @@
 import NavBar from "./NavBar";
 import Footer from "./Footer";
-import { Geist, Geist_Mono, Roboto, Roboto_Flex } from "next/font/google";
+import { Geist, Geist_Mono, Montserrat, Roboto_Flex, Inter } from "next/font/google";
 const geistSans = Geist({
 	variable: "--font-geist-sans",
 	subsets: ["latin"],
@@ -17,10 +17,20 @@ const roboto = Roboto_Flex({
 	display: "swap",
 });
 
+const montserrat = Montserrat({
+	subsets: ["latin"],
+	display:'swap'
+});
+
+const inter = Inter({
+	subsets: ["latin"],
+	display:'swap'
+});
+
 export default function Layout({ children }) {
 
 	return (
-		<div className={`${roboto.variable} ${geistMono.variable} flex flex-col min-h-screen min-w-screen font-[family-name:var(--font-geist-sans)] antialiased text-sm lg:text-xl justify-between`}>
+		<div className={`${inter.className} flex flex-col min-h-screen min-w-screen antialiased text-sm lg:text-xl justify-between`}>
 			<div className="flex-none w-screen">
 				<NavBar />
 			</div>
