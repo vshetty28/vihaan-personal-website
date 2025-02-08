@@ -29,7 +29,7 @@ const WorkExperience = ({ experience }) => {
 			</button>
 			<dialog id={`my_modal_${experience.id}`} className="modal">
 				<div className="modal-box">
-					<h1 className="font-bold text-md lg:text-2xl text-primary my-2">{experience.title}</h1>
+					<h1 className="font-bold text-lg lg:text-2xl text-primary my-2">{experience.title}</h1>
 					<p className="lg:py-4 whitespace-pre-line">{experience.description}</p>
 					<div className="modal-action">
 						<form method="dialog">
