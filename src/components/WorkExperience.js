@@ -20,11 +20,11 @@ const WorkExperience = ({ experience }) => {
 			<div className="timeline-start lg:mx-3 text-xs lg:text-2xl lg:tracking-wider">{experience.date}</div>
 			{experience.completed ? checkmarkIcon : checkmarkOpen}
 			<button className="timeline-end timeline-box text-left hover:border-primary border-2 hover:scale-105 transition duration-200 ease-in-out lg:mx-3" onClick={() => document.getElementById(`my_modal_${experience.id}`).showModal()}>
-				<p className="font-bold text-primary text-xs lg:text-lg">{experience.title}</p>
-				<div className="flex flex-row gap-1">
-					<p className="italic">{experience.company}</p>
-					<p>&ndash;</p>
-					<p>{experience.location}</p>
+				<p className="font-bold text-primary text-xs lg:text-lg text-balance">{experience.title}</p>
+				<div className="flex flex-col lg:flex-row lg:gap-1">
+					<p className="italic shrink-0 font-bold lg:font-normal">{experience.company}</p>
+					<p className="hidden lg:block">&ndash;</p>
+					<p className="shrink-0">{experience.location}</p>
 				</div>
 			</button>
 			<dialog id={`my_modal_${experience.id}`} className="modal">
