@@ -17,6 +17,7 @@ export const frameworks = [
 	{ icon: "/assets/flask.svg", text: "Flask" },
 	{ icon: "/assets/sklearn.svg", text: "sk-learn" },
 	{ icon: "/assets/numpy.svg", text: "NumPy" },
+	{ icon: "/assets/postgresql.svg", text: "PostgreSQL"},
 	{ icon: "/assets/tableau.svg", text: "Tableau" },
 	{ icon: "/assets/github.svg", text: "Github" },
 	{ icon: "/assets/tailwind.svg", text: "Tailwind" },
@@ -28,3 +29,4 @@ export const experiences = [
 	{ id: 2, date: "Jan 2024 - Present", title: "Corporate Partners TA", company: "The Data Mine", location: 'Purdue University', description: "- Project Manager overseeing Data Mine students working alongside the Management Performance Hub on ICJI data\n\n- Responsible for enforcing Agile methodology as Scrum Master\n\n- Helped students with technical issues and assisted in their development of technical skills required for the project", start: false, end: false, completed: true },
 	{ id: 3, date: "Summer 2025", title: "Data Science Engineer Intern", company: "BNY Mellon", location:'New York City, NY', description: "Starts in Summer 2025", start: false, end: true, completed: false },
 ];
+

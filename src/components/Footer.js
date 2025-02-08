@@ -12,7 +12,7 @@ const Footer = () => {
   return (
 		<div className="">
 			<footer className="footer min-w-screen items-center justify-between px-6">
-				<h1 className="invisible lg:visible lg:text-2xl lg:mt-4 font-bold bg-gradient-to-r from-primary to-violet-500 text-transparent bg-clip-text">Contact Me</h1>
+				<h1 className="invisible lg:visible lg:text-2xl lg:mt-4 font-bold bg-gradient-to-tr from-primary to-indigo-700 text-transparent bg-clip-text">Contact Me</h1>
 				<div className="flex flex-row">
 					<a href="mailto:vihaandhshetty@gmail.com">
 						<Image src="/assets/email.svg" alt="" className="size-14 hover:scale-110 lg:mt-2 transition delay-0 duration-200 ease-in-out" width={50} height={80} />
