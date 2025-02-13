@@ -10,10 +10,12 @@ const github_button = (
 
 const Footer = () => {
   return (
-		<div className="">
-			<footer className="footer min-w-screen items-center justify-between px-6">
-				<h1 className="invisible lg:visible lg:text-2xl lg:mt-4 font-bold bg-gradient-to-tr from-primary to-indigo-700 text-transparent bg-clip-text">Contact Me</h1>
-				<div className="flex flex-row">
+		<div>
+			<footer className="flex flex-row place-items-start gap-2 w-full items-center justify-between px-6">
+				<h1 className="text-neutral-content text-xs text-nowrap lg:text-md mt-5">© {new Date().getFullYear()} Vihaan Shetty</h1>
+				<div className="flex flex-row gap-1">
+					<h1 className="hidden lg:inline-block lg:text-3xl lg:mt-4 font-bold bg-gradient-to-tr from-primary to-indigo-700 text-transparent bg-clip-text mx-5 mt-10">Contact Me</h1>
+
 					<a href="mailto:vihaanshetty@gmail.com">
 						<Image src="/assets/email.svg" alt="" className="size-8 lg:size-14 hover:scale-110 mt-5 lg:mt-2 transition delay-0 duration-200 ease-in-out" width={50} height={80} />
 					</a>
