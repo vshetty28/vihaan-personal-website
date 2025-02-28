@@ -7,6 +7,7 @@ export const programmingLanguages = [
 	{ icon: "/assets/css.svg", text: "CSS" },
 	{ icon: "/assets/sql.svg", text: "SQL" },
 	{ icon: "/assets/r.svg", text: "R" },
+	{ icon: "/assets/typescript.svg", text: "TypeScript" },
 ];
 
 export const frameworks = [
@@ -16,12 +17,17 @@ export const frameworks = [
 	{ icon: "/assets/pandas.svg", text: "Pandas" },
 	{ icon: "/assets/flask.svg", text: "Flask" },
 	{ icon: "/assets/sklearn.svg", text: "sk-learn" },
+	{ icon: "/assets/tensorflow.svg", text: "TensorFlow" },
 	{ icon: "/assets/numpy.svg", text: "NumPy" },
-	{ icon: "/assets/postgresql.svg", text: "PostgreSQL"},
+	{ icon: "/assets/postgresql.svg", text: "PostgreSQL" },
 	{ icon: "/assets/tableau.svg", text: "Tableau" },
 	{ icon: "/assets/github.svg", text: "Github" },
 	{ icon: "/assets/tailwind.svg", text: "Tailwind" },
 	{ icon: "/assets/docker.svg", text: "Docker" },
+	{ icon: "/assets/prisma.svg", text: "Prisma" },
+	{ icon: "/assets/google_cloud.svg", text: "Google Cloud" },
+	{ icon: "/assets/react_native.svg", text: "React Native" },
+	{ icon: "/assets/bash.svg", text: "bash" },
 ];
 
 export const experiences = [
