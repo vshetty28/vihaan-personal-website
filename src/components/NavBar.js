@@ -1,42 +1,27 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
+import NavBarLink from "./NavBarLink";
+import { useState } from "react";
+
 const NavBar = () => {
+	const [activeTab, setActiveTab] = useState('/');
 	return (
-		<div className="navbar bg-inherit min-w-screen border-gray-300 dark:border-base-100 border-b-2 pt-2 justify-items-center">
-			<div className="flex flex-row w-screen justify-between lg:px-5">
-				<Link className="btn btn-link btn-sm lg:btn-lg text-lg lg:text-2xl text-primary no-underline hover:no-underline" href="/">
-					Home
+		<div className="navbar min-w-screen pt-2 justify-items-center lg:mt-3">
+			<div className="flex flex-row w-screen justify-between items-center lg:px-5">
+				<Link className="btn btn-link btn-xs lg:btn-lg lg:text-2xl text-primary no-underline hover:no-underline bg-gradient-to-br to-primary from-purple-500 text-transparent bg-clip-text" href="/">
+					<button onClick={() => setActiveTab("/")}>Home</button>
 				</Link>
-				<div className="flex flex-row flex-wrap justify-end">
-					<Link className="btn btn-link btn-xs lg:btn-md no-underline hover:no-underline transition duration-200 ease-in-out hover:text-primary lg:text-xl dark:text-white text-black" href="/about-me">
-						About Me
-					</Link>
-					<Link className="btn btn-link btn-xs lg:btn-md no-underline hover:no-underline transition duration-200 ease-in-out hover:text-primary lg:text-xl dark:text-white text-black" href="/experience">
-						Experience
-					</Link>
-					<Link className="btn btn-link btn-xs lg:btn-md no-underline hover:no-underline transition duration-200 ease-in-out hover:text-primary lg:text-xl dark:text-white text-black" href="/skills">
-						Skills
-					</Link>
-					<div className="dropdown dropdown-end">
-						<div tabIndex={0} role="button" className="btn btn-link btn-xs lg:btn-md no-underline hover:no-underline transition duration-200 ease-in-out hover:text-primary lg:text-xl dark:text-white text-black">
-							More
-						</div>
-						<ul tabIndex={0} className="menu dropdown-content bg-base-100 rounded-box z-[1] mt-4 lg:w-52 lg:p-2 shadow">
-							<li>
-								<Link href="/projects" className="hover:text-primary text-xs lg:text-lg">
-									Projects
-								</Link>
-							</li>
-							<li>
-								<a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-primary text-xs lg:text-lg">
-									Resume
-								</a>
-							</li>
-						</ul>
-					</div>
+				<div className="flex flex-row flex-nowrap justify-end gap-2 items-center">
+					<NavBarLink name="About Me" link="/about-me" activeTab={activeTab} setActiveTab={setActiveTab} />
+					<NavBarLink name="Experience" link="/experience" activeTab={activeTab} setActiveTab={setActiveTab} />
+					<NavBarLink name="Skills" link="/skills" activeTab={activeTab} setActiveTab={setActiveTab} />
+					<NavBarLink name="Projects" link="/projects" activeTab={activeTab} setActiveTab={setActiveTab} />
+					<a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-primary text-xs lg:text-lg font-bold lg:mx-2">
+						Resume
+					</a>
 				</div>
 			</div>
+			<div className="absolute top-0 w-full bg-black "></div>
 		</div>
 	);
 };

@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "motion/react";
 const checkmarkIcon = (
 	<div className="timeline-middle">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5">
@@ -19,21 +20,21 @@ const WorkExperience = ({ experience }) => {
 			{experience.start ? <></> : <hr />}
 			<div className="timeline-start lg:mx-3 text-xs lg:text-2xl lg:tracking-wider">{experience.date}</div>
 			{experience.completed ? checkmarkIcon : checkmarkOpen}
-			<button className="timeline-end timeline-box text-left hover:border-primary border-2 hover:scale-105 transition duration-200 ease-in-out lg:mx-3" onClick={() => document.getElementById(`my_modal_${experience.id}`).showModal()}>
-				<p className="font-bold text-primary text-xs lg:text-lg text-balance">{experience.title}</p>
-				<div className="flex flex-col lg:flex-row lg:gap-1">
-					<p className="italic shrink-0 font-bold lg:font-normal">{experience.company}</p>
-					<p className="hidden lg:block">&ndash;</p>
-					<p className="shrink-0">{experience.location}</p>
-				</div>
-			</button>
+			<motion.button initial={{opacity:0, x:200}} animate={{opacity:1, x:0, transition:{duration:0.6, delay:0.2 + 0.4 * experience.id, ease:'easeInOut'}}} whileHover={{scale:1.05}} className="timeline-end timeline-box text-left hover:border-primary bg-transparent border-base-100 border-2 lg:mx-3" onClick={() => document.getElementById(`my_modal_${experience.id}`).showModal()}>
+				<motion.p className="font-bold bg-gradient-to-tr to-primary from-purple-400 text-transparent bg-clip-text text-xs lg:text-lg text-balance">{experience.title}</motion.p>
+				<motion.div className="flex flex-col lg:flex-row lg:gap-1">
+					<motion.p className="italic shrink-0 font-bold lg:font-normal">{experience.company}</motion.p>
+					<motion.p className="hidden lg:block">&ndash;</motion.p>
+					<motion.p className="shrink-0">{experience.location}</motion.p>
+				</motion.div>
+			</motion.button>
 			<dialog id={`my_modal_${experience.id}`} className="modal">
-				<div className="modal-box">
-					<h1 className="font-bold text-lg lg:text-2xl text-primary my-2">{experience.title}</h1>
+				<div className="modal-box bg-base-300">
+					<h1 className="font-bold text-lg lg:text-2xl bg-gradient-to-tr to-primary from-purple-400 text-transparent bg-clip-text my-2">{experience.title}</h1>
 					<p className="lg:py-4 whitespace-pre-line">{experience.description}</p>
 					<div className="modal-action">
 						<form method="dialog">
-							<button className="btn btn-xs lg:btn-md">Close</button>
+							<button className="btn btn-primary btn-xs lg:btn-md">Close</button>
 						</form>
 					</div>
 				</div>

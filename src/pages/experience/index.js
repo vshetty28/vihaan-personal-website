@@ -3,7 +3,7 @@ import React from "react";
 import Head from "next/head";
 import {experiences} from '@/data/data'
 import ExperienceList from "@/components/ExperienceList";
-
+import {motion} from 'motion/react'
 const checkmarkIcon = (
 	<div className="timeline-middle">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5">
@@ -18,7 +18,9 @@ const Experience = () => {
 				<title>Experience</title>
 			</Head>
 			<Title text="Work Experience" />
-			<ExperienceList experiences={experiences}/>
+			<motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeInOut", delay: 0.1 } }}>
+				<ExperienceList experiences={experiences} />
+			</motion.div>
 		</div>
 	);
 };
