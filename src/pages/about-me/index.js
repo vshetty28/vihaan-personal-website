@@ -24,7 +24,7 @@ const AboutMe = () => {
 							I am originally from the SF Bay Area, California, however, I am currently studying Computer Science and Data Science at Purdue University.
 							I expect to graduate in Spring 2026.
 							I am a huge sports fan, with some of my favorite teams being the 49ers, Warriors, FC Barcelona and Liverpool FC.
-							In my free time I love to work out, watch sports, play videogames, or spend time with my family, friends, and my dog.<br/><br/>
+							In my free time I love to work out, watch sports, play videogames, or spend time with my family, friends, and my dog.
 							Feel free to contact me at the links below, or explore the rest of the site!
 						</motion.p>
 					</div>
