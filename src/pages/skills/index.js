@@ -6,11 +6,11 @@ import Head from "next/head";
 import { motion } from "motion/react";
 const Skills = () => {
 	return (
-		<div>
+		<div className="lg:mt-16">
 			<Head>
 				<title>Skills</title>
 			</Head>
-			<Title text="Technical Skills" />
+			<Title text="Technical Skills"/>
 			<div className="flex flex-col justify-items-center">
 				<SkillList name="Programming Languages" skills={programmingLanguages} />
 				<SkillList name="Frameworks/Technologies" skills={frameworks}/>
