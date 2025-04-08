@@ -13,7 +13,7 @@ const AboutMe = () => {
 				<div className="hero-content flex-col lg:flex-row-reverse">
 					<motion.div initial={{ opacity: 0, scale: 0.7 }} animate={{ opacity: 1, scale: 1, x: 0, transition: { duration: 1.1, ease: "easeInOut", delay:0.8} }} className="flex-2 size-5/12 lg:size-1/4 rounded-full shadow-2xl max-h-full lg:m-4">
 						<motion.div animate={{ y: [-5, 5, -5] }} transition={{ duration: 4, ease: "easeInOut", repeat: Infinity, repeatDelay: 0 }}>
-							<Image src="/assets/headshot.png" alt="Headshot" className="rounded-full" width={1000} height={1000} />
+							<Image src="/assets/headshot.jpg" alt="Headshot" className="rounded-full" width={1000} height={1000} />
 						</motion.div>
 					</motion.div>
 					<div className="lg:px-20 lg:mx-10 flex-1">
