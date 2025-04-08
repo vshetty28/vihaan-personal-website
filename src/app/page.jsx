@@ -10,6 +10,7 @@ export const metadata = {
 		description: "vihaan-shetty.com - Vihaan Shetty's Personal Website and Portfolio",
 	},
 };
+
 export default function Home() {
 	return <HomePage />;
 }
