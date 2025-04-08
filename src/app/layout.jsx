@@ -46,9 +46,23 @@ const jsonLd = {
 		},
 	],
 };
+const jsonLdName = {
+	"@context": "https://schema.org/",
+	"@type": "WebSite",
+	name: "Vihaan Shetty | Personal Website",
+	url: "https://vihaan-shetty.com",
+	potentialAction: {
+		"@type": "SearchAction",
+		target: "{search_term_string}",
+		"query-input": "required name=search_term_string",
+	},
+};
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
+			<head>
+				<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdName) }}></script>
+			</head>
 			<body>
 				<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}></script>
 				<Layout>{children}</Layout>
