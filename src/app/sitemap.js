@@ -7,7 +7,7 @@ export default function sitemap() {
 			priority: 1,
 		},
 		{
-			url: "https://acme.com/about-me",
+			url: "https://vihaan-shetty.com/about-me",
 			lastModified: new Date(),
 			changeFrequency: "monthly",
 			priority: 0.8,
