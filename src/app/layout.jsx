@@ -60,11 +60,9 @@ const jsonLdName = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<head>
-				<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdName) }}></script>
-			</head>
 			<body>
 				<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}></script>
+				<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdName) }}></script>
 				<Layout>{children}</Layout>
 			</body>
 		</html>
