@@ -16,36 +16,7 @@ export const metadata = {
 	},
 	applicationName: "Vihaan Shetty | Home",
 };
-const jsonLd = {
-	"@context": "https://schema.org/",
-	"@type": "BreadcrumbList",
-	itemListElement: [
-		{
-			"@type": "ListItem",
-			position: 1,
-			name: "Home",
-			item: "https://vihaan-shetty.com",
-		},
-		{
-			"@type": "ListItem",
-			position: 2,
-			name: "About Me",
-			item: "https://vihaan-shetty.com/about-me",
-		},
-		{
-			"@type": "ListItem",
-			position: 3,
-			name: "Experience",
-			item: "https://vihaan-shetty.com/experience",
-		},
-		{
-			"@type": "ListItem",
-			position: 4,
-			name: "Skills",
-			item: "https://vihaan-shetty.com/skills",
-		},
-	],
-};
+
 const jsonLdName = {
 	"@context": "https://schema.org/",
 	"@type": "WebSite",
@@ -61,7 +32,6 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body>
-				<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}></script>
 				<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdName) }}></script>
 				<Layout>{children}</Layout>
 			</body>

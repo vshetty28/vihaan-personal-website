@@ -11,9 +11,24 @@ export const metadata = {
 		description: "About Vihaan Shetty",
 	},
 };
+
+const jsonLd = {
+	"@context": "https://schema.org/",
+	"@type": "BreadcrumbList",
+	itemListElement: [
+		{
+			"@type": "ListItem",
+			position: 1,
+			name: "About Me",
+			item: "https://vihaan-shetty.com/about-me",
+		},
+	],
+};
+
 const AboutMe = () => {
 	return (
 		<div>
+			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}></script>
 			<AboutMePage />
 		</div>
 	);
