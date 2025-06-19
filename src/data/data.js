@@ -11,13 +11,14 @@ export const programmingLanguages = [
 ];
 
 export const frameworks = [
+	{ icon: "/assets/pytorch.svg", text: "Pytorch" },
+	{ icon: "/assets/tensorflow.svg", text: "TensorFlow" },
 	{ icon: "/assets/react.svg", text: "React.js" },
 	{ icon: "/assets/nextjs.svg", text: "Next.js" },
 	{ icon: "/assets/node.svg", text: "Node.js" },
 	{ icon: "/assets/pandas.svg", text: "Pandas" },
 	{ icon: "/assets/flask.svg", text: "Flask" },
 	{ icon: "/assets/scikit-learn.svg", text: "sk-learn" },
-	{ icon: "/assets/tensorflow.svg", text: "TensorFlow" },
 	{ icon: "/assets/numpy.svg", text: "NumPy" },
 	{ icon: "/assets/postgresql.svg", text: "PostgreSQL" },
 	{ icon: "/assets/tableau.svg", text: "Tableau" },
@@ -27,9 +28,12 @@ export const frameworks = [
 	{ icon: "/assets/prisma.svg", text: "Prisma" },
 	{ icon: "/assets/google_cloud.svg", text: "Google Cloud" },
 	{ icon: "/assets/react_native.svg", text: "React Native" },
-	{ icon: "/assets/bash.svg", text: "bash" },
+	{ icon: "/assets/bash.svg", text: "Linux" },
 	{ icon: "/assets/expo.svg", text: "Expo" },
-	{ icon: "/assets/django.svg", text: "Django" },
+	{ icon: "/assets/mongodb.svg", text: "MongoDB" },
+	{ icon: "/assets/airflow.svg", text: "Airflow" },
+	{ icon: "/assets/springboot.svg", text: "Spring Boot" },
+	{ icon: "/assets/jira.svg", text: "Jira" },
 ];
 
 export const experiences = [
