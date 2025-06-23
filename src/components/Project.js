@@ -3,7 +3,7 @@ import Image from "next/image";
 const Project = ({ project }) => {
 	return (
 		<div className="flex flex-col h-full border-2 border-gray-700 rounded-md items-center justify-start pb-4 px-4 gap-3">
-			<h1 className="text-3xl font-bold mt-4 bg-linear-to-r from-purple-500 to-primary text-transparent bg-clip-text">{project.name}</h1>
+			<h1 className="text-2xl lg:text-3xl font-bold mt-4 bg-linear-to-r from-purple-500 to-primary text-transparent bg-clip-text">{project.name}</h1>
 			<div className="flex-0 flex flex-row flex-wrap justify-center gap-2">
 				{project.skills.map((skill, index) => (
 					<span key={index} className="bg-primary text-white dark:text-black text-xs font-semibold px-2 py-0.5 rounded-md">
