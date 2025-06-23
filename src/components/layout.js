@@ -31,7 +31,7 @@ export default function Layout({ children }) {
 
 	return (
 		<div className={`${inter.className} flex flex-col min-h-screen min-w-screen antialiased text-sm lg:text-xl justify-between scroll-auto`}>
-			<div className="sticky top-0 bg-[#ededed] dark:bg-[#111110] backdrop-blur-2xl flex-none w-screen shadow-md">
+			<div className="sticky top-0 bg-[#ededed] dark:bg-[#111110] backdrop-blur-2xl flex-none w-screen shadow-md z-50">
 				<NavBar />
 			</div>
 			<main className="flex-auto min-w-screen flex items-center justify-items-center place-items-center">{children}</main>

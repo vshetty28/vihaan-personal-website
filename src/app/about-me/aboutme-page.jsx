@@ -5,7 +5,7 @@ import Title from "../../components/Title";
 
 const AboutMePage = () => {
 	return (
-		<div className="hero bg-inherit max-h-screen">
+		<div className="hero max-h-screen">
 			<div className="hero-content max-w-screen flex-col lg:flex-row-reverse">
 				<motion.div initial={{ opacity: 0, scale: 0.7 }} animate={{ opacity: 1, scale: 1, x: 0, transition: { duration: 1.1, ease: "easeInOut", delay: 0.8 } }} className="flex-2 size-5/12 lg:size-1/4 rounded-full lg:m-4">
 					<motion.div animate={{ y: [-5, 5, -5] }} transition={{ duration: 4, ease: "easeInOut", repeat: Infinity, repeatDelay: 0 }}>
