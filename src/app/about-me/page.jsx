@@ -27,7 +27,7 @@ const jsonLd = {
 
 const AboutMe = () => {
 	return (
-		<div>
+		<div className="z-0">
 			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}></script>
 			<AboutMePage />
 		</div>
