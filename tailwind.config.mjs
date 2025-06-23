@@ -9,11 +9,7 @@ const config = {
 				foreground: "var(--foreground)",
 			},
 		},
-	},
-	plugins: [daisyui],
-	daisyui: {
-		themes: ["light", "dark"],
-	},
+	}
 };
 
 export default config;
