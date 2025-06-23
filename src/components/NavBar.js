@@ -7,7 +7,7 @@ import { useState } from "react";
 const NavBar = () => {
 	const [activeTab, setActiveTab] = useState('/');
 	return (
-		<div className="flex flex-row w-screen justify-between items-center py-4 px-2 lg:py-2 lg:px-5">
+		<div className="flex flex-row w-screen justify-between items-center py-4 px-2 lg:py-4 lg:px-5">
 			<Link className="btn btn-link btn-xs lg:btn-lg text-sm lg:text-2xl text-primary no-underline hover:no-underline hover:scale-105 bg-linear-to-br to-primary from-purple-500 text-transparent bg-clip-text" href="/">
 				<button onClick={() => setActiveTab("/")}>Home</button>
 			</Link>
