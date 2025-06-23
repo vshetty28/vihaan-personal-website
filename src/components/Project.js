@@ -6,7 +6,7 @@ const Project = ({ project }) => {
 			<h1 className="text-3xl font-bold mt-4 bg-linear-to-r from-purple-500 to-primary text-transparent bg-clip-text">{project.name}</h1>
 			<div className="flex-0 flex flex-row flex-wrap justify-center gap-2">
 				{project.skills.map((skill, index) => (
-					<span key={index} className="bg-primary text-white dark:text-foreground text-xs font-semibold px-2 py-0.5 rounded-md">
+					<span key={index} className="bg-primary text-white dark:text-black text-xs font-semibold px-2 py-0.5 rounded-md">
 						{skill}
 					</span>
 				))}
