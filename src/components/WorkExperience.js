@@ -20,7 +20,7 @@ const WorkExperience = ({ experience }) => {
 			{experience.start ? <></> : <hr />}
 			<div className="timeline-start lg:mx-3 text-xs lg:text-2xl lg:tracking-wider">{experience.date}</div>
 			{experience.completed ? checkmarkIcon : checkmarkOpen}
-			<motion.button initial={{opacity:0, x:200}} animate={{opacity:1, x:0, transition:{duration:0.6, delay:0.2 + 0.4 * experience.id, ease:'easeInOut'}}} whileHover={{scale:1.05}} className="timeline-end timeline-box text-left hover:border-primary bg-transparent border-base-100 border-2 lg:mx-3" onClick={() => document.getElementById(`my_modal_${experience.id}`).showModal()}>
+			<motion.button initial={{opacity:0, x:200}} animate={{opacity:1, x:0, transition:{duration:0.6, delay:0.2 + 0.4 * experience.id, ease:'easeInOut'}}} whileHover={{scale:1.05}} className="timeline-end timeline-box text-left hover:border-primary bg-transparent border-base-200 border-2 lg:mx-3" onClick={() => document.getElementById(`my_modal_${experience.id}`).showModal()}>
 				<motion.p className="font-bold bg-linear-to-tr to-primary from-purple-400 text-transparent bg-clip-text text-xs lg:text-lg text-balance">{experience.title}</motion.p>
 				<motion.div className="flex flex-col lg:flex-row lg:gap-1">
 					<motion.p className="italic shrink-0 font-bold lg:font-normal">{experience.company}</motion.p>
